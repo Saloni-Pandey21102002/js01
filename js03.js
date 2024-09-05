@@ -89,27 +89,27 @@ switch (day) {
 
 // 🟢Task 5: Write a program that uses a switch case to assign a grade ('A','B','C','D','F') based on score and log the grade to the console.
 
-let grade = 80;
-switch (grade >= 60) {
-  case 1:
-    console.log("A");
-    break;
+// let grade = 80;
+// switch (grade >= 60) {
+//   case 1:
+//     console.log("A");
+//     break;
 
-  case 2:
-    console.log("B");
-    break;
-  case 3:
-    console.log("C");
-    break;
-  case 4:
-    console.log("D");
-    break;
-  case 5:
-    console.log("F");
-    break;
-  default:
-    console.log("failed");
-}
+//   case 2:
+//     console.log("B");
+//     break;
+//   case 3:
+//     console.log("C");
+//     break;
+//   case 4:
+//     console.log("D");
+//     break;
+//   case 5:
+//     console.log("F");
+//     break;
+//   default:
+//     console.log("failed");
+// }
 
 //Activity 4 : Conditional (Ternary) Operator
 
