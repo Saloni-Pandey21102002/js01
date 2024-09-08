@@ -11,7 +11,8 @@
 let num = 0;
 if (num > 0) {
   console.log("positive");
-} else if (num < 0) {
+}
+if (num < 0) {
   console.log("negative");
 } else {
   console.log("zero");
@@ -89,27 +90,31 @@ switch (day) {
 
 // 🟢Task 5: Write a program that uses a switch case to assign a grade ('A','B','C','D','F') based on score and log the grade to the console.
 
-// let grade = 80;
-// switch (grade >= 60) {
-//   case 1:
-//     console.log("A");
-//     break;
+let score = 90;
+let grade;
+switch (true) {
+  case score >= 90:
+    score >= 90;
+    grade = "A";
+    break;
+  case score >= 80:
+    score >= 80;
+    grade = "B";
+    break;
+  case score >= 70:
+    score >= 70;
+    grade = "C";
+    break;
+  case score >= 60:
+    score >= 60;
+    grade = "D";
+    break;
+  default:
+    grade = "F";
+    break;
+}
 
-//   case 2:
-//     console.log("B");
-//     break;
-//   case 3:
-//     console.log("C");
-//     break;
-//   case 4:
-//     console.log("D");
-//     break;
-//   case 5:
-//     console.log("F");
-//     break;
-//   default:
-//     console.log("failed");
-// }
+console.log("the grade is : " + grade);
 
 //Activity 4 : Conditional (Ternary) Operator
 
@@ -123,3 +128,10 @@ console.log(checkNumber);
 // Activity 5: Combining Conditions
 
 // 🟢Task 7: Write a program to check if a year is a leap year using multiple conditions (divisible  by 4, but not 100 unless also divisible by 400) and log the result to the console.
+
+let year = 2021;
+if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
+  console.log("This is leap year");
+} else {
+  console.log("This is not leap year");
+}
