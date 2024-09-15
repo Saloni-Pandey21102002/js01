@@ -78,13 +78,22 @@ console.log(productOfNum(5));
 
 // Task 8: Use enhanced object literals to create an object with methods and properties, and log the object to the console.
 const name = "Eren";
+const lastname = "Yeager";
 const age1 = 20;
 
 const obj = {
   name,
+  lastname,
   age1,
+  fullname() {
+    return `${this.name} ${this.lastname}`;
+  },
+  introduce() {
+    return `I am ${this.fullname()} and I am ${this.age1} years old `;
+  },
 };
 console.log(obj);
+console.log(obj.introduce());
 
 // Task 9: Create an object with computed property names based on variables and log the object to console.
 
